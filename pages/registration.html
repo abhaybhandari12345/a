@@ -1,0 +1,147 @@
+<html>
+ <head>
+     <link rel="stylesheet" href="../css/style.css">  
+    
+ </head>
+ <body>
+       <div class="mainContainer">
+          <div id="header">
+           User Registration Form
+          </div>
+        <form id="userRegistration" class="form1" novalidate>
+           <div id="middle">
+           
+               
+               
+               <div class="container">
+                    
+                   <div class="subContent">
+                         <label for="fName">First Name*</label>
+                        <input type="text" class="inputStyle" placeholder="First Name" maxlength="30" id="fName" name="fName" oninput="only(this,'ch')" 
+                       required >
+                      
+                    </div>
+                   <div class="subContent">    
+                       <label for="lName">Last Name*</label>
+                        <input type="text" class="inputStyle" id="lName"  name="lName" placeholder="Last Name" maxlength="30"
+                               oninput="only(this,'ch')"  required>
+                        
+                   </div>
+                   
+                </div>
+               
+                   <div class="container">
+                      <div class="subContent">
+                           <label for="email">Email*</label>
+                           <input type="email" class="inputStyle" id="email" placeholder="Email" maxlength="45"  required>
+                         
+                       </div>
+                       <div class="subContent">
+                           <label for="dob">Date Of Birth</label>
+                           <input type="date" class="inputStyle" id="dob" onkeydown="return false" maxlength="10" onclick="dateOfBirth()">
+                           
+                       </div>
+                  </div>
+            
+                 <div class="container">
+                     <div class="subContent">
+                       <label for="password">Password*</label>
+                       <input type="password" class="inputStyle" id="password" placeholder="Password" minlength="8" maxlength="16"   required>
+                       <span id="passPatterBox"></span>    
+                     </div>
+                    <div class="subContent">
+                        <label for="repassword">Re-type Password*</label>
+                       <input type="password" class="inputStyle" id="repassword" placeholder="Re-type Password"minlength="8"
+                              maxlength="16"   required >
+                         
+                     </div>
+                  </div>
+                   
+             <div class="container">
+                  <div class="subContent">
+                   <label for="dob">Marital Status</label>
+                   <select class="inputStyle">
+                     <option value="">--Select Marital--</option>
+                     <option value='ms1' >Married</option>
+                     <option vlaue='ms2'>Single</option>
+                    </select>
+                   </div>
+                <div  class="subContent">
+                 <label for="mobileNo">Mobile Number</label>
+                     <input type="text" id="mobileNo" maxlength="10" class="inputStyle" placeholder="(XXX) XXX-XXXX" oninput="only(this,'no')">
+                 </div>
+             </div>
+               
+                <div  class="container containerAddress">
+                  <div class="subContent">
+                   <label for="address">Residental Address</label>
+                   <textarea class="inputStyle areaStyle" placeholder="Address1" rows="4"></textarea>
+                    </div>
+                    <div class="subContent"> 
+                        <label for="coaddress">Correspondence Address</label>
+                       <textarea class="inputStyle areaStyle" placeholder="Address2" rows="4"></textarea>
+                    </div>
+                </div>
+               
+               <div class="container container2">
+                    <div class="subContent">
+                     <input type="checkbox">
+                     <label for="currentlyWorking">Currently Working</label>
+                     </div>
+                     <div class="subContent">
+                      <label for="gender">Gender</label><br>
+                      <input type="radio"checked class="radioStyle" name="gender">Male
+                      <input type="radio" class="radioStyle" name="gender">Female
+                      <input type="radio" class="radioStyle"name="gender">Other
+                     </div>
+                 </div>
+               
+               
+               
+               <div class="container">
+                   <div class="subContent">
+                       <label for="country">Country</label>
+                       <select class="inputStyle" id="country" onchange="changeCountry()">
+                           <option value="" selected>--Select Country--</option>
+                           <option value="0">India</option>
+                           <option value="1">USA</option>
+                       </select>
+                   </div>
+                   <div class="subContent">
+                         <label for="state">State</label>
+                          <select class="inputStyle" id="state">
+                           <option value=""selected>--Select Your State--</option>
+                           
+                          </select>
+                   </div>
+                </div>
+                <div class="container">
+                  <div class="subContent">
+                    <label for="postalCode">Postal Code</label>
+                    <input type="text" class="inputStyle" placeholder="Postal Code" id="postalCode" maxlength="5"oninput="only(this,'no')">
+                   </div>
+                 <div class="subContent">
+                    <label for="city">City</label>
+                    <input type="text" class="inputStyle" id="city" placeholder="City"maxlength="20" oninput="onlyCharacter(this)" >
+                </div>
+             </div>
+             
+      
+    </div>
+           
+   <div id="bottom">
+       <span id="mandtext"> Mandatory Field*</span>
+            <div id="formButton">
+                
+                <input type="submit" id="submit"  class="btStyling">
+                <input type="reset" class="btStyling" id= "reset">
+                </div>
+           </div>
+          
+           </form>
+           
+    </div>
+     
+   <script type=text/javascript src=../scripts/registration.js></script>
+ </body>
+</html>

@@ -1,0 +1,123 @@
+
+.mainContainer
+{
+     position: absolute;
+     border:1px solid black;
+     width:1660px;
+     height: 850px;
+  
+ }
+
+ #header
+{
+   padding-top: 10px ;
+    height: 32px;
+    width: 96%;
+    font-size: 24px;
+    color:gray;
+    border-bottom: 1px solid lightblue;
+    margin-left: 6px;
+    margin-bottom:20px;
+}
+#middle
+{ 
+   float:left;
+    font-size:18px;
+    width:96%;
+    height:80%;
+    margin-left: 6px;
+}
+.container{
+   
+   float:left;
+    width:100%;
+    height:79px;
+    margin-left: 12px;
+   
+}
+.subContent{
+     
+    width:45%;
+    float:left;
+    margin-right:40px;
+    
+}
+
+.containerAddress
+{
+  height: 100px;
+ }
+
+.container2
+{
+    height: 50px;
+}
+
+.inputStyle
+{
+  
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    height: 40px;
+    padding-left:8px;
+}
+
+.areaStyle{
+    height: 60px;
+}
+
+.radioStyle
+{
+    margin-right:9px;
+    margin-left:2px;
+}
+
+#bottom
+{
+    float: left;
+    width:100%;
+    height:40px;
+}
+#mandtext{
+    margin-left: 20px;
+    font-size:18px;
+}
+
+#formButton
+{
+    float: right;
+    position: relative;
+    width:50%;
+    height: 100%;
+}
+
+.btStyling
+{
+    position: relative;
+    float:right;
+    width:20%;
+    height:90%;
+    right:138px;
+    
+}
+
+#reset
+{
+    border:1px solid darkorange;
+    margin-right: 10px;
+    background-color: white;
+    color:darkorange;
+}
+#submit
+{
+     color:white;
+     border:1px solid darkorange;
+    background-color: darkorange;
+}
+.subContent.fail input{
+    border-color: red;
+}
+.subContent.success input{
+    border-color:"green";
+}
