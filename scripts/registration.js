@@ -1,19 +1,4 @@
-//to restrict particular input tag to character or digit
-function only(input,type){
-var onlyCharacter=/[^a-z]/gi;
-var onlyNo=/[^0-9]/gi;
-if(type==="ch")
-input.value=input.value.replace(onlyCharacter,'');
-else
-input.value=input.value.replace(onlyNo,'');
-}
-//to assign date of birth max to today & min
-function dateOfBirth(){
- let today=new Date().toISOString().slice(0,10);
-  document.getElementById("dob").setAttribute("max",today);
-  let past=today.slice(0,4);
-  past=past-120;
- let minDate=past + today.slice(4,10);
+
  document.getElementById("dob").setAttribute("min",minDate);
 }
 
